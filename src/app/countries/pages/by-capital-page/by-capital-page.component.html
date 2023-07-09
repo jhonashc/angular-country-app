@@ -1,0 +1,15 @@
+<div class="my-4">
+  <!-- Search Box -->
+  <shared-search-box
+    placeholder="Search a capital..."
+    [initialValue]="term"
+    (onDebounceValue)="searchByCapital($event)"
+  ></shared-search-box>
+
+  <shared-loading *ngIf="isLoading"></shared-loading>
+
+  <!-- Country list -->
+  <countries-country-card-list
+    [countryList]="countries"
+  ></countries-country-card-list>
+</div>

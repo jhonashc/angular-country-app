@@ -1,0 +1,16 @@
+<div
+  class="bg-white rounded-md border border-gray-200"
+  [routerLink]="['/countries/by', country.cca3]"
+>
+  <img
+    class="w-full h-48 object-cover rounded-t-md"
+    [src]="country.flags.png"
+    [alt]="country.name.official"
+  />
+
+  <div class="p-3">
+    <h5 class="text-md md:text-lg font-bold tracking-tight text-gray-900">
+      {{ country.name.official }} {{ country.flag }}
+    </h5>
+  </div>
+</div>

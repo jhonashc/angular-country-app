@@ -1,3 +1,9 @@
-<main class="container mx-auto">
-  <h1>Country App</h1>
+<!-- Navbar -->
+<shared-navbar></shared-navbar>
+
+<main class="container mx-auto px-4 pb-4">
+  <shared-badge-nav-list [badgeNavList]="badgeNavList"></shared-badge-nav-list>
+
+  <!-- Content -->
+  <router-outlet></router-outlet>
 </main>
